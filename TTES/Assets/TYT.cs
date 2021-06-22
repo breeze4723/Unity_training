@@ -60,14 +60,14 @@ public class TYT : MonoBehaviour
         Vector3 V_substract = a - b;
         for(int i = 0 ,j=widthlist1.Length; i < widthlist1.Length; i++,j--)
         {
-            Vector3 stamdardVec = new Vector3((V_substract.y) * j, (-V_substract.x) * j, (V_substract.y) * j);
+            Vector3 stamdardVec = new Vector3((V_substract.y) * j, (-V_substract.x) * j, (V_substract.z) * j);
             widthlist1[i] = new Vector3(a.x + stamdardVec.x, a.y + stamdardVec.y, a.z + stamdardVec.z);
             pointer.Add(widthlist1[i]);
         }
         pointer.Add(Newpoint);
         for (int i = 0, j = 1; i < widthlist2.Length; i++, j++)
         {
-            Vector3 stamdardVec = new Vector3((-V_substract.y) * j, (V_substract.x) * j, (-V_substract.y) * j);
+            Vector3 stamdardVec = new Vector3((-V_substract.y) * j, (V_substract.x) * j, (-V_substract.z) * j);
             widthlist2[i] = new Vector3(a.x + stamdardVec.x, a.y + stamdardVec.y, a.z + stamdardVec.z);
             pointer.Add(widthlist2[i]);
         }

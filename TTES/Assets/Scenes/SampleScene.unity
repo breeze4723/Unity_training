@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 371144502}
   - component: {fileID: 371144501}
   - component: {fileID: 371144504}
+  - component: {fileID: 371144505}
   m_Layer: 0
   m_Name: MeshPruduct
   m_TagString: Untagged
@@ -208,7 +209,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 371144500}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc37d943c9c64f546988317f34498cc9, type: 3}
   m_Name: 
@@ -217,6 +218,28 @@ MonoBehaviour:
   Newpoint: {x: 0, y: 0, z: 0}
   Oldpoint: {x: 0, y: 0, z: 0}
   t: 0
+  widthlist1: []
+  widthlist2: []
+--- !u!114 &371144505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371144500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ea5d58c938893c41b19934299fc99ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ovalpointer: []
+  Hradius: 1
+  Vradius: 1
+  pointer: []
+  Newpoint: {x: 0, y: 0, z: 0}
+  Oldpoint: {x: 0, y: 0, z: 0}
+  t: 0
+  p: 0
   widthlist1: []
   widthlist2: []
 --- !u!1 &705507993
