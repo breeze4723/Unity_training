@@ -11,7 +11,7 @@ public class PositionGenerate : MonoBehaviour
         Vector3 Vec = NewPos - OldPos;
         for (int i = 0, j = width; i < width; i++, j--)
         {
-            float n = (j /3.0f) * 0.7f * 0.1f * range;
+            float n = (j /3.0f) * 0.07f * 0.1f * range;
             Vector3 Vec1 = new Vector3((Vec.y) * n, (-Vec.x) * n, (Vec.z) *n);
             Vector3 temp = new Vector3(OldPos.x + Vec1.x, OldPos.y + Vec1.y, OldPos.z + Vec1.z);
             GetPointPos.Add(temp);
@@ -19,7 +19,7 @@ public class PositionGenerate : MonoBehaviour
         GetPointPos.Add(OldPos);
         for (int i = 0, j = 1; i < width; i++, j++)
         {
-            float n = (j / 3.0f) * 0.7f *0.1f* range;
+            float n = (j / 3.0f) * 0.07f *0.1f* range;
             Vector3 Vec1 = new Vector3((-Vec.y) * n, (Vec.x) * n, (-Vec.z)*n);
             Vector3 temp = new Vector3(OldPos.x + Vec1.x, OldPos.y + Vec1.y, OldPos.z + Vec1.z);
             GetPointPos.Add(temp);

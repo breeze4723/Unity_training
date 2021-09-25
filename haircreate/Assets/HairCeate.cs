@@ -77,7 +77,7 @@ public class HairCeate : MonoBehaviour
     }
     void inputRG()
     {
-        if (Input.GetKeyDown("down")&&InputRange<10)
+        if (Input.GetKeyDown("down")&&InputRange<100)
         {
             InputRange++;
         }
